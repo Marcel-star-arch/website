@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Personnel</title>
+    <link rel="stylesheet" href="stys.css">
+    <style>
+    /* Styles généraux */
+    body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Titres (H1, H2, H3) */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #6c63ff;
+    font-size: 28px;
+    border-bottom: 3px solid #6c63ff;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    color: #555; 
+    font-size: 20px;
+}
+
+/* Section Header */
+.hero {
+    background: linear-gradient(to bottom, #6c63ff, #a29bfe);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: #6c63ff;
+    border: 2px solid white;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: white;
+    color: #6c63ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.project-card {
+    background: #ececec;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea, .contact button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    border: 2px solid #ddd;
+    background-color: #fefefe;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: #6c63ff;
+    background-color: #fafafa;
+    outline: none;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.4);
+}
+
+.contact textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact button {
+    background: #6c63ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.contact button:hover {
+    background: #514ed8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 14px;
+    margin-top: 50px;
+}
+    
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <h1 class="logo">MonPortfolio</h1>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h2>Bienvenue sur mon portfolio</h2>
+            <p>Je suis un développeur passionné par le web design et le développement d'applications modernes.</p>
+            <a href="#projects" class="btn">Voir mes projets</a>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <h2>À propos de moi</h2>
+        <p>Je suis un développeur web expérimenté avec des compétences en HTML, CSS, JavaScript et bien plus. Mon objectif est de créer des solutions créatives et innovantes pour répondre aux besoins de mes clients.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Mes projets</h2>
+        <div class="project-card">
+            <h3>Projet 1</h3>
+            <p>Un site e-commerce moderne.</p>
+        </div>
+        <div class="project-card">
+            <h3>Projet 2</h3>
+            <p>Une application de gestion de tâches.</p>
+        </div>
+        <div class="project-card">
+            <h3>Projet 3</h3>
+            <p>Un blog dynamique avec une interface fluide.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contactez-moi</h2>
+        <form>
+            <label for="name">Votre nom</label>
+            <input type="text" id="name" placeholder="Votre nom">
+            
+            <label for="email">Votre e-mail</label>
+            <input type="email" id="email" placeholder="votremail@exemple.com">
+            
+            <label for="message">Votre message</label>
+            <textarea id="message" placeholder="Votre message"></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MonPortfolio - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
